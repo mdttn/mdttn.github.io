@@ -3,9 +3,297 @@
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="style.css" />
     <title>Portfolio de Thérèse Than Nguyen</title>
 </head>
 <body>
+    <header>
+        <nav class="nav-left">
+            <a>MDTTN</a>
+        </nav>
+        <nav class="menu-toggle">
+            <input type="checkbox" />
 
+            <span></span>
+            <span></span>
+            <span></span>
+
+            <ul class="menu">
+                <li>
+                    <a href="#home">
+                        <label for="menu-checkbox" onclick="this.parentNode.click();">Accueil</label>
+                    </a>
+                </li>
+                <li>
+                    <a href="#projects">
+                        <label for="menu-checkbox" onclick="this.parentNode.click();">Projets</label>
+                    </a>
+                </li>
+                <li>
+                    <a href="#skills">
+                        <label for="menu-checkbox" onclick="this.parentNode.click();">Compétences</label>
+                    </a>
+                </li>
+                <li>
+                    <a href="#experience">
+                        <label for="menu-checkbox" onclick="this.parentNode.click();">Expérience</label>
+                    </a>
+                </li>
+                <li>
+                    <a href="#contact">
+                        <label for="menu-checkbox" onclick="this.parentNode.click();"><em>Contact</em></label>
+                    </a>
+                </li>
+                <li>
+                    <a href="index.html">
+                        <label for="menu-checkbox" onclick="this.parentNode.click();"><em>ENG</em></label>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <nav class="nav-center">
+            <a href="#home">Accueil</a>
+            <a href="#projects">Projets</a>
+            <a href="#skills">Compétences</a>
+            <a href="#experience">Expérience</a>
+            <a href="#contact"><em>Contact</em></a>
+        </nav>
+        <nav class="nav-right">
+            <a href="index.html">ENG</a>
+        </nav>
+    </header>
+    <section id="home">
+        <div class="container">
+            <div class="profile">
+                <img class="photo" src="img/photoID.jpg" alt="Photo ID" />
+                <h1>Allô, je m'appelle <em>Thérèse</em>!</h1>
+                <h2><em>~ Développeuse de jeux ~</em></h2>
+                <a class="cv" href="cv/Therese-ThanNguyen-CV-Français.pdf" target="_blank">
+                    <img src="img/open.png" />
+                    Ouvrir le CV
+                </a>
+                <div class="description">
+                    <div class="desc-left">
+                        <p>
+                            Je suis une <em>développeuse de jeux vidéo</em>, spécialisée en <em>gameplay et systèmes</em>, qui aime <em>créer</em> et rendre vie à des <em>idées</em>.<br />
+                            <br />
+                            J’aime essayer de nouvelles choses et avoir une vision devenir réalité, car je crois que la curiosité et l’envie d’expérimenter sont des aspects importants à la croissance et à l’amélioration d’un programmeur.<br />
+                            <br />
+                            Quand je ne suis pas en train de coder ou d’entamer un projet de jeu, je me retrouve naturellement à chercher de l’inspiration dans tout ce qui m’entoure, que ce soit pour un projet de couture ou pour de la photographie.
+                        </p>
+                    </div>
+                    <div class="desc-right">
+                        <img src="img/avatar.gif" alt="avatar character gif" />
+                    </div>
+                </div>
+                <table class="profile-table">
+                    <tr>
+                        <td>
+                            <h3><em>ÉDUCATION</em></h3>
+                            <p>
+                                <b>DEC</b> Programmation en jeux vidéo<br />
+                                <i>Collège LaSalle</i>
+                            </p>
+                        </td>
+                        <td>
+                            <h3><em>LANGUES</em></h3>
+                            <p>
+                                Vietnamien · Français · Anglais<br />
+                                <i>Maternelle · Maîtrisée · Maîtrisée</i>
+                            </p>
+                        </td>
+                        <td>
+                            <h3><em>STATUT</em></h3>
+                            <p>À la recherche d'un stage d'été 2026</p>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </section>
+    <section id="projects">
+        <div class="container">
+            <h2>Projets</h2>
+            <div class="project-grid">
+                <div class="project-card">
+                    <img src="img/thumbnail.png" alt="Housing Coins screenshot">
+                    <h3><em>Housing Coins</em></h3>
+                    <p>Trouve toutes les pièces de monnaie sur ton chemin vers le sommet, sans mourir, pour contruire ta maison.</p>
+                    <div class="tags">
+                        <span>Unreal</span>
+                        <span>Système de collecte</span>
+                        <span>Collisions</span>
+                        <span>Intéractions</span>
+                        <span>Ennemis IA</span>
+                    </div>
+                    <div class="card-actions">
+                        <a href="https://youtu.be/ffJPuvtzxUw" target="_blank">Bande-Annonce</a>
+                        <a href="https://mdttn.itch.io/housing-coins" target="_blank">Détails</a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <img src="img/orb-maze.png" alt="Orb Maze screenshot">
+                    <h3><em>Orb Maze</em></h3>
+                    <p>Termine ce jeu rapide en amassant tous les 25 points dans 2 niveaux consécutifs.</p>
+                    <div class="tags">
+                        <span>Unreal</span>
+                        <span>Système de points</span>
+                        <span>Prototype</span>
+                    </div>
+                    <div class="card-actions">
+                        <a href="https://youtu.be/-8NzkPCMkJA" target="_blank">Démo</a>
+                        <a href="https://mdttn.itch.io/orb-maze" target="_blank">Détails</a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <img src="img/bee-alive.png" alt="Bee Alive screenshot">
+                    <h3><em>Bee Alive</em></h3>
+                    <p>Joue le rôle d'une abeille, qui essaie d'éviter les dangers de la pollution en ville sous formes de nuages.</p>
+                    <div class="tags">
+                        <span>Unity 2D</span>
+                        <span>Système de record</span>
+                        <span>Infinite Runner</span>
+                        <span>Collisions</span>
+                    </div>
+                    <div class="card-actions">
+                        <a href="https://play.unity.com/en/games/0c7b376f-7eee-4db8-94ac-339a2332883d/bee-alive-by-turtle-saviors-gameable-2023" target="_blank">Jouer sur navigateur</a>
+                        <a href="https://mdttn.itch.io/bee-alive" target="_blank">Détails</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="skills">
+        <div class="container">
+            <h2>Compétences</h2>
+            <div class="skill-grid">
+                <div class="skill-card">
+                    <h3>Moteurs & Langages</h3>
+                    <div class="tags">
+                        <span>Unreal Engine</span>
+                        <span>Unity 2D</span>
+                        <span>C++</span>
+                        <span>C#</span>
+                        <span>Java</span>
+                        <span>HTML / CSS</span>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <h3>Gameplay / Mécaniques</h3>
+                    <div class="tags">
+                        <span>Système de points / collecte</span>
+                        <span>Système de vie</span>
+                        <span>IA Simple</span>
+                        <span>Collisions</span>
+                        <span>Intéractions</span>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <h3>Outils</h3>
+                    <div class="tags">
+                        <span>GitHub</span>
+                        <span>GitKraken</span>
+                        <span>Visual Studio</span>
+                        <span>Adobe</span>
+                        <span>Microsoft</span>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <h3>Compétences personnelles</h3>
+                    <div class="tags">
+                        <span>Travail d'équipe</span>
+                        <span>Organisation</span>
+                        <span>Communication</span>
+                        <span>Adaptabilité</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="experience">
+        <div class="container">
+            <h2>Expérience</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <h4>2026 - Présent</h4>
+                    <div class="info">
+                        <h3>Programmeuse de jeu éducatif</h3>
+                        <h4>Freelance - À distance</h4>
+                        <p>
+                            • Coder des scripts en C#<br />
+                            • Implémenter du code et des mécaniques dans les niveaux du jeu<br />
+                            • Discuter des détails et de la progression hebdomadairement avec le concepteur (lead designer)<br />
+                        </p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <h4>2025 - Présent</h4>
+                    <div class="info">
+                        <h3>Surveillante et services aux élèves</h3>
+                        <h4>Villa Sainte-Marcelline</h4>
+                        <p>
+                            • Superviser des environnements dynamiques<br />
+                            • Coordonner et communiquer les informations à l’accueil<br />
+                            • Résoudre des conflits et des situations imprévues
+                        </p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <h4>2024 - Present</h4>
+                    <div class="info">
+                        <h3>Student supervisor</h3>
+                        <h4>Collège Jean-de-Brébeuf</h4>
+                        <p>
+                            • Superviser des environnements dynamiques<br />
+                            • Assurer le bon fonctionnement et comportement des élèves<br />
+                            • Gérer des classes lors des cours, des examens et des activités
+                        </p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <h4>2023</h4>
+                    <div class="info">
+                        <h3>Tutrice</h3>
+                        <h4>En ligne</h4>
+                        <p>
+                            • Guider un élève de 5e econdaire dans ses études<br />
+                            • Développer ses connaissances pédagogiques en français et en mathématiques
+                        </p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <h4>2022</h4>
+                    <div class="info">
+                        <h3>Service en restauration</h3>
+                        <h4>Sushi Rosa</h4>
+                        <p>
+                            • Optimiser les tâches pour servir les clients<br />
+                            • Traiter les transactions<br />
+                            • Maintenir l’environnement propre
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer id="contact">
+        <p>© 2026 Thérèse Than Nguyen. Tous droits réservés.</p>
+        <div class="social">
+            <a href="mailto:theresemyduyen@outlook.com">
+                <img src="img/email.png" alt="email" />
+            </a>
+            <a href="https://linkedin.com/in/therese-than-nguyen/">
+                <img src="img/linkedIn-logo.png" alt="linkedin" />
+            </a>
+            <a href="https://github.com/mdttn">
+                <img src="img/github-logo.png" alt="github" />
+            </a>
+            <a href="https://mdttn.itch.io">
+                <img src="img/itch.io-logo.png" alt="itch" />
+            </a>
+        </div>
+    </footer>
 </body>
 </html>
