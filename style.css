@@ -354,6 +354,10 @@ footer {
 	padding: 0 40px
 }
 
+footer p {
+	font-size: 12px;
+}
+
 .social {
 	display: flex;
 	gap: 15px
